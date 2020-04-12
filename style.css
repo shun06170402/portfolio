@@ -1,0 +1,599 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*ここからコーディング*/
+
+/*あらかじめのcss*/
+
+.container {
+    width: 100%;
+}
+.h {
+    height: 1080px;
+}
+.flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.section {
+    font-size: 30px;
+    padding: 80px 0;
+    margin: 0 auto;
+}
+.title {
+    margin: 10px auto 0;
+    font-size: 60px;
+    font-family: Georgia;
+}
+.underl-y {
+    background: linear-gradient(transparent 70%, yellow 70%);
+    width: 300px;
+}
+.underl-g {
+    background: linear-gradient(transparent 70%, #AAA 70%);
+    width: 200px;
+}
+.icon-type1 {
+    margin: 20px 60px 10px;
+    filter: invert(88%) sepia(61%) saturate(0%) 
+    hue-rotate(229deg) brightness(107%) contrast(101%);
+}
+.icon-type2 {
+    width: 48px;
+    margin-left: auto;
+    margin-right: 10px;
+}
+.icon-type3 {
+    width: 30px;
+    margin-right: 20px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    padding: 5px;
+}
+.tac {
+    text-align: center;
+}
+.tal {
+    text-align-last: left;
+}
+.mb3 {
+    margin-bottom: 30px;
+}
+.mt3 {
+    margin-top: 30px;
+}
+.mt8 {
+    margin-top: 80px;
+}
+.mb8 {
+    margin-bottom: 80px;
+}
+.pb3 {
+    padding-bottom: 30px;
+}
+.pt8 {
+    padding-top: 80px;
+}
+.pb8 {
+    padding-bottom: 80px;
+}
+.none {
+    display: none;
+}
+
+/*ヘッダー*/
+
+.main-bg {
+    background: url(img/main.jpg) bottom no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+}
+.header-bar {
+    text-align: center;
+    display: flex;
+    margin: 0 0 40px auto;
+    width: 45%;
+    margin-left: auto;
+}
+.invisible {
+    opacity: 0;
+    font-family: serif;
+    font-size: 20px;
+}
+.nav-word:hover .invisible{
+    opacity: 1;
+}
+.one {
+    left: 39%;
+}
+.two {
+    left: 37%;
+}
+.three {
+    left: 42%;
+}
+.four {
+    left: 32%;
+}
+.five {
+    left: 34%;
+}
+.header-bar a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+/*メインビジュアル*/
+
+.main-visual {
+    margin-top: 200px;
+}
+.catch-copy1 {
+    color: white;
+    font-size: 60px;
+    padding-left: 300px;
+    line-height: 1.5;
+    font-family: Franklin Gothic Medium;
+    
+}
+.catch-copy2 {
+    color: white;
+    font-size: 45px;
+    padding: 30px 0 0 300px;
+    line-height: 1.5;
+    font-family: Franklin Gothic Medium;
+}
+.catch-copy3 {
+    color: white;
+    font-size: 45px;
+    padding: 5px 0 0 300px;
+    line-height: 1.5;
+    font-family: Franklin Gothic Medium;
+}
+
+/*プロフィール*/
+
+.container.pb3 {
+    background-color: #EEEEEE;
+}
+.profile {
+    padding-bottom: 20px;
+}
+.profile-contents {
+    display: flex;
+    justify-content: center; 
+}
+.me {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+.text {
+    margin-top: 40px;
+    margin-left: 100px;
+    font-size: 24px;
+    line-height: 1.5;
+    width: 50%;
+}
+.text p {
+    margin-bottom: 20px;
+}
+.text h6 {
+    font-size: 40px;
+}
+
+    
+/*スキル*/
+
+.container.color-type1.pb3 {
+    padding-bottom: 40px;
+    background-color: #FFFFAA
+}
+.coding,.design-tool {
+    padding: 0 300px 0;
+}
+.detail {
+    width: 200px;
+    text-align: center;
+    line-height: 1.5;
+    font-family: serif;
+}
+
+/*ポートフォリオ*/
+
+.container.y {
+    background-color: #EEEEEE;
+}
+.portfolio {
+    text-align: center;
+    padding: 0 210px 0;
+}
+.underl-y2 {
+    background: linear-gradient(transparent 70%, yellow 70%);
+    width: 400px;
+}
+.work {
+    background-color: #fff;
+    padding: 15px;
+    margin: 0 20px;
+    box-shadow: 0px 1px 2px 0px black;
+    width: 350px;
+    height: 350px;
+}
+.work p {
+    text-align: left;
+    font-family: serif;
+}
+.about {
+    font-size: 25px;
+    padding-bottom: 50px;
+    font-family: 'ＭＳ 明朝';
+}
+.lp,.design {
+    display: flex;
+    justify-content: space-around;
+}
+.sample-lp {
+    width: 300px;
+    height: 200px;
+}
+
+.sample-design {
+    width: 150px;
+    height: 150px;
+    padding: 25px 75px;
+}
+.twwiter {
+    width: 300px;
+    padding: 25px 0;
+}
+
+
+/*コンタクト*/
+
+.contact-box {
+    background-color: #333333;
+}
+.contact {
+    color: white;
+    height: 200px;
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: serif;
+}
+.name {
+    color: #00ECFF;
+    font-size: 25px;
+}
+.sns {
+    width: 32px;
+}
+.social {
+    text-align: center;
+}
+
+/*フッター*/
+.footer {
+    text-align: center;
+    background-color: #333333;
+    color: white;
+    font-size: 20px;
+    font-style: bold;
+}
+
+/*ＪＱ用ハンバーガーメニューcss*/
+
+#hamburger,.menu-content {
+    display: none;
+}
+#hamburger.active span:nth-of-type(1) {
+    top: 20px;
+    transform: rotate(45deg);
+}
+#hamburger.active span:nth-of-type(2) {
+    opacity: 0;
+}
+#hamburger.active span:nth-of-type(3) {
+    top: 20px;
+    transform: rotate(-45deg);
+}
+/*ここまでＪＱハンバーガーメニュー*/
+
+/*トップボタン*/
+
+#top-btn {
+    background: white;
+    color: black;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+    border: 1px solid #000;
+}
+
+
+/*ここからレスポンシブデザイン*/
+@media screen and (max-width: 768px) {
+
+    /*ハンバーガーメニュー形*/
+    #hamburger {
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        cursor: pointer;
+        z-index: 100;
+        top: 15px;
+        right: 15px;
+        transition: .4s;
+        display: block;
+    }
+
+    #hamburger span {
+        display: block;
+        width: 35px;
+        height: 2px;
+        background-color: white;
+        transition: .8s;
+    }
+
+    #hamburger span:nth-of-type(1) {
+        position: absolute;
+        top: 10px;
+        left: 2px;
+    }
+
+    #hamburger span:nth-of-type(2) {
+        position: absolute;
+        top: 20px;
+        left: 2px;
+    }
+
+    #hamburger span:nth-of-type(3) {
+        position: absolute;
+        top: 30px;
+        left: 2px;
+    }
+    /*ここまでハンバーガーメニューの形*/
+
+    /*ここからレスポンシブコーディング*/
+
+     /*ヘッダー*/
+     .main-visual {
+         margin-top: 0px;
+     }
+
+    /*メインビジュアル*/
+    .res-none {
+        display: none;
+    }
+    .main-bg {
+        text-align: center;
+        padding: 200px 0 200px 0;
+        height: 100%;
+    }
+    .catch-copy1 {
+        padding: 0;
+        font-size: 40px;
+        padding-bottom: 60px;
+    }
+    .catch-copy2 {
+        padding: 0;
+        font-size: 30px;
+    }
+    .catch-copy3 {
+        padding: 0;
+        font-size: 30px;
+    }
+
+    /*プロフィール*/
+
+    .container.color-type2.h {
+        height: 100%;
+        border: 1px solid #000;
+    }
+    .profile-contents {
+        margin-bottom: 60px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .me {
+        width: 400px;
+        height: 400px;
+    }
+    .text {
+        margin-left: 0;
+        width: 80%;
+    }
+    
+    /*スキル*/
+    .coding,.design-tool {
+        padding: 0;
+    }
+
+    /*ポートフォリオ*/
+    .portfolio {
+        padding: 0;
+    }
+    .design.flex {
+        display: block;
+    }
+    .work {
+        margin-bottom: 40px;
+    }
+    .work p {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .lp,.design {
+        flex-wrap: wrap;
+    }
+
+    /*コンタクト*/
+    .contact.flex {
+        display: block;
+        height: 100%;
+    }
+    .contact p {
+        text-align: center;
+    }
+    .name {
+        padding-top: 30px;
+    }
+    .social {
+        padding-bottom: 30px;
+    }
+
+    /*ここからＪＱ用ハンバーガーメニュー*/
+
+    .menu-content {
+        display: block;
+    }
+    .menu-content .menu-title {
+        margin: 40px 20px;
+        font-size: 2.2rem;
+        color: #333333;
+        text-align-last: left;
+        font-weight: bold;
+    }
+    .menu-content {
+        width: calc(100% - 80px);
+        height: 100%;
+        text-align: center;
+        transition: .2s;
+        position: fixed;
+        top: 0;
+        left: calc(-100% - 80px);
+        background: #fff;
+        color: #333333;
+        box-shadow: 80px 0 rgba(38, 98, 213, 0.3);
+    }
+    .menu-content a {
+        color: #333333;
+        margin: 15px;
+        padding: 5px;
+        border-bottom: 0.5px solid #2662D5;
+        text-decoration: none;
+        display: block;
+    }
+    .menu-content li {
+        width: 100%;
+        text-align-last: left;
+        height: 40px;
+        
+    }
+    .menu-content.open {
+        left: 0;
+    }
+    .menu-content a:hover {
+        filter: invert(88%) sepia(100%) saturate(2929%) 
+        hue-rotate(104deg) brightness(99%) contrast(104%)
+    }
+    
+}
